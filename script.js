@@ -106,53 +106,79 @@ const mouse = new THREE.Vector2();
 
 // Array de coordenadas con la propiedad "info"
 const coordinates = [
-        { 
-          lat: 14.59549568288755, 
-          lon: 120.92072168102077, 
-          info: { 
-            titulo: "Philippines: Responsible for Over a Third of Ocean Plastic Waste", 
-            contenido: "According to an analysis by Our World in Data based on a study by Science Advances, the Philippines is responsible for over a third of the plastic waste that ends up in the oceans, making it one of the largest contributors to marine pollution.", 
-            origen: "https://s2-g1.glbimg.com/ukklpyZmpMHXYrGu2fgyG8A1xNg=/0x0:6016x4001/1008x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2019/o/H/tP1znSQKi8Bk5E4lqORg/2018-09-22t041229z-157899311-rc1d8e2cc750-rtrmadp-3-world-cleanup-philippines.jpg"
-          } 
-        }, 
-        { 
-          lat: -15.23879752771152, 
-          lon: 154.21777190171278, 
-          info: { 
-            titulo: "Great Barrier Reef Shows Signs of Recovery with Increased Coral Cover in 2024", 
-            contenido: "The Australian Institute of Marine Science (AIMS) reported that the Great Barrier Reef has shown significant recovery, with an increase in hard coral cover across its major regions. In the northern region, cover grew up to 39.5%, with similar improvements in the central and southern zones.", 
-            origen: "https://media.traveler.es/photos/63ecf8d844c1a0e03615a59e/16:9/w_1920,c_limit/2H0WB0B%20(1).jpg"
-          } 
-        }, 
-        { 
-          lat: 32.288635439804246, 
-          lon: -138.8410917272819, 
-          info: { 
-            titulo: "The Plastic Continent Floating in the Pacific Ocean", 
-            contenido: "The Great Pacific Garbage Patch is a 1.6 million square kilometer garbage continent weighing around 80,000 tons of plastic that continues to grow, according to a 2018 scientific study published by Nature. To understand its size, it is now three times the size of France.", 
-            origen: "https://static.wixstatic.com/media/caa8fe_2b9c51269b6c4e46ad6943844494633d~mv2.jpg/v1/fill/w_989,h_600,al_c,q_85,enc_auto/caa8fe_2b9c51269b6c4e46ad6943844494633d~mv2.jpg"
-          } 
-        }, 
-        { 
-          lat: 23.617134339221813, 
-          lon: -111.4137939246337, 
-          info: { 
-            titulo: "Mexico Supports Moratorium on Seabed Mining in Areas Beyond National Jurisdiction", 
-            contenido: "In 2023, Mexico joined the moratorium aimed at halting deep-sea mining outside national jurisdiction. This support seeks to protect marine ecosystems until there is enough scientific evidence to ensure marine conservation, and aims to regulate any future exploitation strictly to avoid irreparable damage.", 
-            origen: "https://www.induambiente.com/contenidos/7873_Submarina_y_Controversial-01_2000.jpg"
-          } 
-        }, 
-        { 
-          lat: 64.96352276915466, 
-          lon: -60.415455875186794, 
-          info: { 
-            titulo: "The Ocean is Warming", 
-            contenido: "The ocean has absorbed much of this heat increase, with the top 100 meters (about 328 feet) of the ocean showing a temperature rise of over 0.6 degrees Fahrenheit (0.33 degrees Celsius) since 1969. The Earth stores 90% of the extra energy in the ocean.", 
-            origen: "https://www.gob.mx/cms/uploads/article/main_image/67704/15965309_872513286224499_1905059739080221491_n.jpg"
-          } 
-        }
-      
-];
+    {
+      "lat": 30.5852,
+      "lon": 32.2654,
+      "info": {
+        "titulo": "Canal de Suez: Clave para el Comercio Global",
+        "contenido": "Ubicado en Egipto, conecta el Mar Mediterráneo con el Mar Rojo, permitiendo el tránsito marítimo entre Europa y Asia sin rodear África. Es crucial para el comercio global, ya que maneja aproximadamente el 12% del comercio mundial.",
+        "origen": "https://cadenaser.com/resizer/v2/GGLGCS73DVOLVID3SIIOFY45FI.jpg?auth=89529ecb0d534b78ad57d642da573c8e9e77e557b299108c8fc02354050ebb11&quality=70&width=1200&height=900&smart=true"
+      }
+    },
+    {
+      "lat": -22.9068,
+      "lon": -67.6700,
+      "info": {
+        "titulo": "Cinturón de Litio: Recurso Estratégico",
+        "contenido": "Ubicado en Argentina, Bolivia y Chile, contiene las mayores reservas de litio del mundo. Este metal es clave para la fabricación de baterías y la transición energética global, lo que lo convierte en un recurso estratégico para la industria tecnológica.",
+        "origen": "https://media.realinstitutoelcano.org/wp-content/uploads/2018/09/salar-atacama.jpg"
+      }
+    },
+    {
+      "lat": 48.3794,
+      "lon": 31.1656,
+      "info": {
+        "titulo": "Guerra Rusia-Ucrania: Impacto Geopolítico y Energético",
+        "contenido": "Desde 2022, este conflicto ha redefinido la seguridad europea y el equilibrio energético mundial. Rusia es un proveedor clave de gas y petróleo, mientras que Ucrania es un productor agrícola crucial.",
+        "origen": "https://elordenmundial.com/wp-content/uploads/2024/04/guerra-rusia-ucrania.jpg"
+      }
+    },
+    {
+      "lat": 26.5653,
+      "lon": 56.2500,
+      "info": {
+        "titulo": "Estrecho de Ormuz: Punto Crítico del Transporte de Petróleo",
+        "contenido": "Ubicado entre Irán y Omán, es el paso marítimo más estratégico para el transporte de petróleo, por donde fluye aproximadamente el 20% del crudo mundial. Cualquier conflicto en la región puede desestabilizar los mercados energéticos.",
+        "origen": "https://www.revistaeyn.com/binrepository/1200x784/0c0/0d0/none/26086/QVYD/estrechoormuz_7233892_20240415091147.jpg"
+      }
+    },
+    {
+      "lat": -2.8762,
+      "lon": 23.6560,
+      "info": {
+        "titulo": "Cuenca del Congo: Riqueza Mineral y Biodiversidad",
+        "contenido": "Rica en coltán, cobalto y diamantes, esenciales para la industria tecnológica. Su biodiversidad y recursos hídricos la convierten en una zona clave para la seguridad ambiental global, pero enfrenta conflictos y explotación ilegal.",
+        "origen": "https://es.greenpeace.org/es/wp-content/uploads/sites/3/2017/11/62a58d8f-gp0str4qg_pressmedia-2100x1401.jpg"
+      }
+    },
+    {
+      "lat": 34.1498,
+      "lon": 76.8259,
+      "info": {
+        "titulo": "Cachemira: Región en Disputa Nuclear",
+        "contenido": "Disputada entre India y Pakistán, ambos con armas nucleares. Su importancia radica en su ubicación estratégica, acceso a recursos hídricos y su impacto en la seguridad del sur de Asia.",
+        "origen": "https://img.eldefinido.cl/portadas/1200/2016-08-22-5878TGR2968.jpg"
+      }
+    },
+    {
+      "lat": 45.4641,
+      "lon": 147.7500,
+      "info": {
+        "titulo": "Islas Kuriles: Disputa entre Rusia y Japón",
+        "contenido": "Archipiélago en disputa desde la Segunda Guerra Mundial. Su control otorga ventajas militares y acceso estratégico al Pacífico Norte, siendo un punto de tensión entre ambos países.",
+        "origen": "https://lh5.googleusercontent.com/p/AF1QipMKJRdhT5JXd0yDdLXR0bH5enz5YpnRTHv751A5=w743-h429-n-k-no"
+      }
+    },
+    {
+      "lat": 51.9225,
+      "lon": 4.4792,
+      "info": {
+        "titulo": "Rotterdam: El Puerto Más Grande de Europa",
+        "contenido": "El principal nodo logístico de Europa, maneja grandes volúmenes de carga y energía. Es clave para el comercio entre Europa, Asia y América, con infraestructura avanzada y relevancia estratégica.",
+        "origen": "https://www.amsterdam.net/es/wp-content/uploads/sites/93/rotterdam-hd.jpg"
+      }
+    }
+];  
 
 // Función para cerrar el modal cuando se hace clic fuera de él
 window.addEventListener('click', function(event) {
@@ -161,6 +187,17 @@ window.addEventListener('click', function(event) {
 
     // Si el clic es fuera del modal y el modal está visible, ciérralo
     if (!isClickInside && modal.style.display === 'block') {
+        modal.style.display = 'none';
+    }
+});
+
+window.addEventListener('click', function(event) {
+    const modal = document.getElementById('info-modal');
+    const close = document.getElementById('close-modal');
+    const isClickInside = close.contains(event.target);
+
+    // Si el clic es fuera del modal y el modal está visible, ciérralo
+    if (isClickInside) {
         modal.style.display = 'none';
     }
 });
@@ -188,7 +225,7 @@ const pins = [];
 // Función para agregar pines en las coordenadas (usando CircleGeometry para trazar círculos con un anillo animado)
 function addPin(lat, lon, info) {
 // Geometría del círculo
-const circleGeometry = new THREE.CircleGeometry(0.02, 32);  // Círculo con radios pequeños y muchos segmentos para suavizar
+const circleGeometry = new THREE.CircleGeometry(0.05, 32);  // Círculo con radios pequeños y muchos segmentos para suavizar
 const circleMaterial = new THREE.MeshBasicMaterial({
 color: 0xff0000,  // Color rojo
 side: THREE.DoubleSide,  // Hacer visible el círculo desde ambos lados
@@ -277,7 +314,7 @@ function onMouseClick(event) {
 // Escuchar eventos de clic
 window.addEventListener('click', onMouseClick);
 
-// Cerrar el modal
+// // Cerrar el modal
 // const closeModalButton = document.getElementById('close-modal');
 // closeModalButton.addEventListener('click', () => {
 //     document.getElementById('info-modal').style.display = 'none';
@@ -397,7 +434,7 @@ function animate() {
     pins.forEach(pin => pin.update());
 
     if (autoRotate) {
-        sphere.rotation.y += 0.002;
+        sphere.rotation.y += 0.0015;
         secondSphere.rotation.y += 0.002;
     }
     controls.update();
